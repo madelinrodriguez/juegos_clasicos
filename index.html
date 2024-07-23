@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Índice de Juegos - Flores</title>
+    <title>Í𝓷𝓭𝓲𝓬𝓮 𝓭𝓮 𝓙𝓾𝓮𝓰𝓸𝓼</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -34,13 +34,18 @@
         .game-list {
             list-style-type: none;
             padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
         .game-item {
             background-color: #ffe4e1;
-            margin: 10px 0;
+            margin: 10px;
             padding: 15px;
             border-radius: 5px;
             transition: background-color 0.3s, transform 0.3s;
+            text-align: center;
+            width: 200px;
         }
         .game-item:hover {
             background-color: #ffc4c1;
@@ -50,6 +55,23 @@
             text-decoration: none;
             color: #333;
             font-size: 18px;
+            display: block;
+        }
+        .game-link:hover {
+            color: #d2691e;
+        }
+        .game-image {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+        h1 {
+            font-family: 'Cursive', sans-serif;
+            color: #ff69b4;
+        }
+        .game-link {
+            color: #ff69b4;
         }
         .game-link:hover {
             color: #d2691e;
@@ -59,17 +81,53 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Índice de Juegos</h1>
+            <h1>Í𝓷𝓭𝓲𝓬𝓮 𝓭𝓮 𝓙𝓾𝓮𝓰𝓸𝓼</h1>
         </div>
         <div class="content">
             <ul class="game-list">
-                <li class="game-item"><a class="game-link" href="juego_tanque.html">Juego de Tanques</a></li>
-                <li class="game-item"><a class="game-link" href="juego_invaders.html">Juego de Invaders</a></li>
-                <li class="game-item"><a class="game-link" href="juego_rompecabezas.html">Juego de Rompecabezas</a></li>
-                <li class="game-item"><a class="game-link" href="juego_minas.html">Juego de Minas</a></li>
-                <li class="game-item"><a class="game-link" href="juego_memoria.html">Juego de Memoria</a></li>
-                <li class="game-item"><a class="game-link" href="juego_tictactoe.html">Juego de Tic Tac Toe</a></li>
-                <li class="game-item"><a class="game-link" href="juego_ahorcado.html">Juego de Ahorcado</a></li>
+                <li class="game-item">
+                    <a class="game-link" href="juego_tanque.html">
+                        <img class="game-image" src="https://via.placeholder.com/200x150.png?text=Tanques" alt="Juego de Tanques">
+                        𝕁𝕦𝕖𝕘𝕠 𝕕𝕖 𝕋𝕒𝕟𝕢𝕦𝕖𝕤
+                    </a>
+                </li>
+                <li class="game-item">
+                    <a class="game-link" href="juego_invaders.html">
+                        <img class="game-image" src="https://via.placeholder.com/200x150.png?text=Invaders" alt="Juego de Invaders">
+                        𝕁𝕦𝕖𝕘𝕠 𝕕𝕖 𝕀𝕟𝕧𝕒𝕕𝕖𝕣𝕤
+                    </a>
+                </li>
+                <li class="game-item">
+                    <a class="game-link" href="juego_rompecabezas.html">
+                        <img class="game-image" src="https://via.placeholder.com/200x150.png?text=Rompecabezas" alt="Juego de Rompecabezas">
+                        𝕁𝕦𝕖𝕘𝕠 𝕕𝕖 ℝ𝕠𝕞𝕡𝕖𝕔𝕒𝕓𝕖𝕫𝕒𝕤
+
+                    </a>
+                </li>
+                <li class="game-item">
+                    <a class="game-link" href="juego_minas.html">
+                        <img class="game-image" src="https://via.placeholder.com/200x150.png?text=Minas" alt="Juego de Minas">
+                        𝕁𝕦𝕖𝕘𝕠 𝕕𝕖 𝕄𝕚𝕟𝕒𝕤
+                    </a>
+                </li>
+                <li class="game-item">
+                    <a class="game-link" href="juego_memoria.html">
+                        <img class="game-image" src="https://via.placeholder.com/200x150.png?text=Memoria" alt="Juego de Memoria">
+                        𝕁𝕦𝕖𝕘𝕠 𝕕𝕖 𝕄𝕖𝕞𝕠𝕣𝕚𝕒
+                    </a>
+                </li>
+                <li class="game-item">
+                    <a class="game-link" href="juego_tictactoe.html">
+                        <img class="game-image" src="https://via.placeholder.com/200x150.png?text=Tic+Tac+Toe" alt="Juego de Tic Tac Toe">
+                        𝕁𝕦𝕖𝕘𝕠 𝕕𝕖 𝕋𝕚𝕔 𝕋𝕒𝕔 𝕋𝕠𝕖
+                    </a>
+                </li>
+                <li class="game-item">
+                    <a class="game-link" href="juego_ahorcado.html">
+                        <img class="game-image" src="https://via.placeholder.com/200x150.png?text=Ahorcado" alt="Juego de Ahorcado">
+                        𝕁𝕦𝕖𝕘𝕠 𝕕𝕖 𝔸𝕙𝕠𝕣𝕔𝕒𝕕𝕠
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
